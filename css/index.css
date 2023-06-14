@@ -302,9 +302,10 @@ h4 {
 
 
 .last_profile {
-   margin-top: 10vh;
+   padding-top: 10vh;
    text-align: center;
-   margin-bottom: 10vh;
+   padding-bottom: 10vh;
+   position: relative;
 }
 
 .last_radius_image {
@@ -372,9 +373,17 @@ h4 {
 }
 
 .footer_back{
-   position: relative;
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 100%;
    background: #FFFFFF;
    z-index: -2;
+   bottom: 0;
+
+}
+footer{
+   position: relative;
 }
 
 /* 
