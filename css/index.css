@@ -23,7 +23,7 @@ body {
    right: 0;
    bottom: 0;
    left: 0;
-   width: 40%;
+   width: 100%;
    height: 45%;
    margin: auto;
    text-align: center;
@@ -39,7 +39,7 @@ body {
 
 
 .loading_orange_img {
-   animation: rotation 2s linear infinite;
+   animation: rotation 2.2s linear infinite;
 }
 
 .loading_orange_img {
@@ -489,7 +489,7 @@ footer {
 
    .top_image {
       width: auto;
-      transform: translate(-18%);
+      transform: translate(-24%);
    }
 }
 
