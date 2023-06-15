@@ -27,12 +27,14 @@ body {
    height: 45%;
    margin: auto;
    text-align: center;
+   overflow: hidden;
 }
 
-.loading_text{
+.loading_text {
    font-weight: 800;
    font-size: 1.5rem;
-   color: #F5AC4A;;
+   color: #F5AC4A;
+   ;
 }
 
 
@@ -187,7 +189,8 @@ h2 {
    -ms-writing-mode: tb-rl;
    writing-mode: vertical-rl;
 }
-.mini_face{
+
+.mini_face {
    width: 15%;
    text-align: center;
    margin-top: 5vh;
@@ -195,7 +198,7 @@ h2 {
 }
 
 
-.mini_face_image{
+.mini_face_image {
    margin-left: 3px;
 
    width: 100%;
@@ -208,10 +211,10 @@ h2 {
    overflow: hidden;
    text-align: center;
    margin-right: 10px;
-   
+
 }
 
-.full_body_image{
+.full_body_image {
    width: 100%;
 }
 
@@ -509,7 +512,7 @@ footer {
       height: auto;
    }
 
-   .mini_face{
+   .mini_face {
       position: absolute;
    }
 
