@@ -185,9 +185,10 @@ h2 {
 .header_scroll_text {
    color: #f2f2f2;
    font-size: 1.2rem;
-   transform: translate(0%, -370%);
    -ms-writing-mode: tb-rl;
    writing-mode: vertical-rl;
+   position: absolute;
+   bottom: 8px;
 }
 
 .mini_face {
@@ -371,6 +372,10 @@ h4 {
    position: relative;
 }
 
+.last_prifile_name{
+   overflow: hidden;
+}
+
 .last_radius_image {
    border-radius: 50%;
    width: 110px;
@@ -480,7 +485,7 @@ footer {
 } */
 
 @media screen and (max-width:850px) {
-
+   
    .header_text {
       font-size: 3rem;
       transform: translate(0%, -200%);
@@ -491,10 +496,6 @@ footer {
       width: auto;
       transform: translate(-24%);
    }
-}
-
-@media screen and (max-width:850px) {
-
 
    .background_image {
       background-size: 80% auto;
