@@ -85,22 +85,6 @@ body {
    opacity: 0.6;
 }
 
-@keyframes fall {
-   to {
-      top: 250%;
-   }
-}
-
-@keyframes rotation {
-   0% {
-      transform: rotate(0);
-   }
-
-   100% {
-      transform: rotate(360deg);
-   }
-}
-
 .orange_fall_img:nth-child(1) {
    left: 6%;
    top: -5vh;
@@ -168,8 +152,13 @@ h2 {
    line-height: 3.5rem;
    margin-left: 5%;
    color: #f2f2f2;
-   transform: translate(0%, -250%);
+   transform: translate(-5%, -250%);
+   opacity: 0;
+}
 
+.header_text.start {
+   animation: title_left_fade_in forwards 1.2s 1;
+   animation-delay: 0.5s;
 }
 
 .header_stroke {
@@ -236,6 +225,7 @@ h3 ruby {
 
 .whoami_profile {
    padding-top: 3vh;
+   overflow: hidden;
 }
 
 
@@ -280,6 +270,7 @@ h4 {
    color: #3f404c;
    height: auto;
    padding-bottom: 1vh;
+   overflow: hidden;
 }
 
 .whoami_name {
@@ -289,6 +280,15 @@ h4 {
    font-size: 2.2rem;
    color: #3f404c;
    overflow: hidden;
+}
+
+.update_befor.start{
+   animation: up_fade_in forwards 0.5s 1;
+}
+
+.update_befor {
+   transform: translateY(10%);
+   opacity: 0;
 }
 
 
@@ -357,6 +357,7 @@ h4 {
    background-image: radial-gradient(#0084ff 2px, #48a7ff 2px);
    background-size: 50px 50px;
    padding-bottom: 5vh;
+   overflow: hidden;
 
 }
 
@@ -484,12 +485,58 @@ footer {
 
 } */
 
+
+@keyframes up_fade_in {
+
+   to {
+   
+   opacity:1;
+   transform:translateY(0%);
+   }
+   
+}
+
+@keyframes title_left_fade_in {
+
+   to {
+   opacity:1;
+   transform: translate(0%, -250%);
+   
+   }
+   
+}
+
+@keyframes fall {
+   to {
+      top: 250%;
+   }
+}
+
+@keyframes rotation {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+
 @media screen and (max-width:850px) {
    
    .header_text {
       font-size: 3rem;
+      transform: translate(-5%, -200%);
+   }
+
+   @keyframes title_left_fade_in {
+
+      to {
+      opacity:1;
       transform: translate(0%, -200%);
-      /* transform: translate(0%, -300%); */
+      }
+      
    }
 
    .top_image {
@@ -502,6 +549,7 @@ footer {
       background-position: center -10vh;
    }
 
+   
    .avater_image_block {
       min-width: auto;
 
@@ -553,6 +601,5 @@ footer {
    .skill {
       width: auto;
    }
-
-
 }
+
